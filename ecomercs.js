@@ -19,9 +19,9 @@ const productos = {
     { nombre: "Attack on Titan 1", precio: "$250", imagen: "aot.jpg", descripcion: "La lucha por la supervivencia." },
   ],
   figuras: [
-    { nombre: "Figura Kurumi Tokisaki", precio: "$500", imagen: "Kurumi.png", descripcion: "Figura de acción coleccionable." },
+    { nombre: "Figura Kurumi Tokisaki", precio: "$500", imagen: "kurumi.jpg", descripcion: "Figura de acción coleccionable." },
     { nombre: "Figura Miku Nakano", precio: "$480", imagen: "miku.png", descripcion: "Figura de Miku Nakano de las Quintillizas." },
-    { nombre: "Figura Akeno Himejima", precio: "$550", imagen: "Akeno.png", descripcion: "Figura de Akeno Himejima" },
+    { nombre: "Figura Akeno Himejima", precio: "$550", imagen: "Akeno.jpg", descripcion: "Figura de Akeno Himejima" },
     { nombre: "Figura Darkness", precio: "$600", imagen: "yami.png", descripcion: "Figura de Yami ." },
     { nombre: "Figura Megumin", precio: "$650", imagen: "megumin.png", descripcion: "Figura de Megumin." },
     { nombre: "Figura Rem", precio: "$700", imagen: "rem.png", descripcion: "Figura de Rem." }
