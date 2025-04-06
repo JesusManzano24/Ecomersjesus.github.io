@@ -435,19 +435,28 @@ body {
     gap: 10px;
   }
 }
-/* Ajuste para el menú lateral en dispositivos móviles */
+/* Ajuste específico para el menú lateral en móviles */
 @media (max-width: 480px) {
   .side-menu {
-    width: 120px; /* Menú lateral más pequeño */
+    width: 100px; /* Menú lateral más pequeño */
     padding: 10px; /* Reducimos el padding */
+    font-size: 12px; /* Texto más pequeño */
+    position: fixed; /* Mantiene el menú fijo en la pantalla */
+    height: 100%; /* Ocupa toda la altura */
+    overflow-y: auto; /* Habilitamos scroll si es necesario */
   }
-  
+
   .side-menu a {
-    font-size: 12px; /* Tamaño de fuente más pequeño */
-    padding: 6px 8px; /* Reducimos el espacio interno */
+    font-size: 10px; /* Reducimos el tamaño del texto de los enlaces */
+    padding: 5px 8px; /* Ajustamos el espacio interno */
   }
-  
+
   .content {
-    margin-left: 120px; /* Ajustamos el margen para que coincida con el nuevo tamaño del menú */
+    margin-left: 100px; /* Ajustamos el margen para adaptarse al nuevo tamaño */
+  }
+
+  .menu-items {
+    flex-direction: column; /* Ordenamos los elementos verticalmente */
+    gap: 8px; /* Reducimos el espacio entre enlaces */
   }
 }
