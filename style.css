@@ -460,3 +460,29 @@ body {
     gap: 8px; /* Reducimos el espacio entre enlaces */
   }
 }
+/* Ajuste específico para el menú superior en móviles */
+@media (max-width: 480px) {
+  .top-menu {
+    height: auto; /* Ajustamos la altura para que se acomode al contenido */
+    width: 100%; /* Ocupa todo el ancho del dispositivo */
+    padding: 10px; /* Espaciado más compacto */
+    flex-direction: column; /* Cambiamos a diseño vertical */
+    align-items: flex-start; /* Alineamos los elementos hacia la izquierda */
+    gap: 10px; /* Separación entre los elementos */
+  }
+
+  .menu-items {
+    flex-direction: column; /* Los enlaces se organizan en una columna */
+    gap: 5px; /* Reducimos el espacio entre enlaces */
+  }
+
+  .menu-items a {
+    font-size: 12px; /* Tamaño más pequeño para los enlaces */
+    padding: 8px 10px; /* Espaciado compacto en los enlaces */
+  }
+
+  .logo {
+    width: 40px; /* Reducimos el tamaño del logo */
+    margin-bottom: 10px; /* Separación entre el logo y los enlaces */
+  }
+}
