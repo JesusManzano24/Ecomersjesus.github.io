@@ -222,3 +222,32 @@ document.addEventListener("DOMContentLoaded", () => {
   mostrarProductosInicio();
   actualizarContadorCarrito();
 });
+// Función para manejar la barra de búsqueda
+document.getElementById("searchButton").addEventListener("click", function () {
+  const searchValue = document.getElementById("searchInput").value.toLowerCase();
+  const cartItems = document.querySelectorAll("#cartItems .cart-item");
+
+  cartItems.forEach(item => {
+    const productName = item.querySelector("h3").textContent.toLowerCase();
+    if (productName.includes(searchValue)) {
+      item.style.display = ""; // Mostrar si coincide
+    } else {
+      item.style.display = "none"; // Ocultar si no coincide
+    }
+  });
+});
+
+// Agregar búsqueda en tiempo real (opcional)
+document.getElementById("searchInput").addEventListener("input", function () {
+  const searchValue = this.value.toLowerCase();
+  const cartItems = document.querySelectorAll("#cartItems .cart-item");
+
+  cartItems.forEach(item => {
+    const productName = item.querySelector("h3").textContent.toLowerCase();
+    if (productName.includes(searchValue)) {
+      item.style.display = ""; // Mostrar si coincide
+    } else {
+      item.style.display = "none"; // Ocultar si no coincide
+    }
+  });
+});

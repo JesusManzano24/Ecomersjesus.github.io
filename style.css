@@ -435,3 +435,127 @@ body {
     gap: 10px;
   }
 }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos generales de los menús */
+.top-menu, .side-menu {
+  background-color: #333;
+  color: white;
+  position: fixed;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Menú Superior */
+.top-menu {
+  top: 0;
+  left: 250px;
+  width: calc(100% - 250px);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+/* Resto del código original para menús, productos, botones, etc. */
+
+/* Responsividad avanzada */
+@media (max-width: 1024px) {
+  .top-menu {
+    height: 70px;
+    padding: 0 15px;
+    left: 200px;
+    width: calc(100% - 200px);
+  }
+  
+  .side-menu {
+    width: 200px;
+  }
+
+  .product {
+    width: calc(50% - 20px); /* Ajusta el ancho para 2 columnas */
+  }
+  
+  .content {
+    margin-left: 200px;
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .side-menu {
+    width: 180px;
+  }
+  
+  .top-menu {
+    left: 180px;
+    width: calc(100% - 180px);
+  }
+  
+  .product {
+    width: calc(100% - 20px); /* Una columna */
+  }
+  
+  .content {
+    margin-left: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .side-menu {
+    width: 100%; /* Menú lateral ocupando todo el ancho en móviles */
+    height: auto;
+    position: static;
+  }
+
+  .top-menu {
+    height: 60px;
+    left: 0;
+    width: 100%;
+    position: static;
+  }
+  
+  .product {
+    width: 100%;
+  }
+
+  .content {
+    margin: 0; /* Sin márgenes */
+  }
+
+  .cart-product {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .menu-items {
+    flex-direction: column; /* Cambiar el menú superior a columnas */
+    gap: 10px;
+  }
+
+  .logo {
+    display: none; /* Oculta el logo en pantallas pequeñas */
+  }
+}
+
+/* Mejoras específicas para elementos interactivos */
+.product:hover {
+  transform: none;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Efecto sutil */
+}
+/* Ajustes globales para tabletas y móviles */
+@media (max-width: 480px) {
+  .buttons button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .menu-items a {
+    font-size: 14px;
+  }
+}
