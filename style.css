@@ -459,6 +459,7 @@ body {
     flex-direction: column; /* Ordenamos los elementos verticalmente */
     gap: 8px; /* Reducimos el espacio entre enlaces */
   }
+<<<<<<< HEAD
 }
 /* Ajuste específico para el menú superior en móviles */
 @media (max-width: 480px) {
@@ -487,4 +488,6 @@ body {
     width: 40px; /* Reducimos el tamaño del logo */
     margin-bottom: 5px; /* Espaciado entre el logo y los enlaces */
   }
+=======
+>>>>>>> parent of 53f47c3 (git1)
 }
