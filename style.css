@@ -459,35 +459,38 @@ body {
     flex-direction: column; /* Ordenamos los elementos verticalmente */
     gap: 8px; /* Reducimos el espacio entre enlaces */
   }
-<<<<<<< HEAD
 }
-/* Ajuste específico para el menú superior en móviles */
+/* Ajuste para el menú superior en móviles */
 @media (max-width: 480px) {
   .top-menu {
-    width: 100px; /* Menú superior más pequeño */
-    height: auto; /* Ajustamos la altura al contenido */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: auto; /* Ajusta la altura al contenido */
     padding: 10px; /* Espaciado más compacto */
-    flex-direction: column; /* Diseño vertical para los elementos */
-    align-items: flex-start; /* Alineamos los elementos a la izquierda */
-    gap: 10px; /* Separación entre los elementos */
-    position: fixed; /* Mantiene el menú fijo en la parte superior */
-    top: 0; /* Se asegura de estar en la parte superior */
+    flex-direction: column; /* Diseño vertical */
+    align-items: flex-start; /* Alineación a la izquierda */
+    gap: 10px; /* Separación entre elementos */
+    position: fixed; /* Fijo en la parte superior */
+    top: 0; /* Posicionado en la parte superior */
+    left: 0; /* Comienza desde la izquierda */
+    z-index: 950; /* Aseguramos que no se superponga al menú lateral */
   }
 
   .menu-items {
     flex-direction: column; /* Los enlaces se organizan en columna */
-    gap: 5px; /* Reducimos el espacio entre enlaces */
+    gap: 5px; /* Espaciado compacto entre enlaces */
   }
 
   .menu-items a {
-    font-size: 10px; /* Tamaño más pequeño para los enlaces */
-    padding: 5px 8px; /* Espaciado interno más compacto */
+    font-size: 12px; /* Tamaño ajustado para enlaces */
+    padding: 5px 10px; /* Espaciado interno compacto */
   }
 
   .logo {
     width: 40px; /* Reducimos el tamaño del logo */
-    margin-bottom: 5px; /* Espaciado entre el logo y los enlaces */
+    margin-bottom: 5px; /* Separación entre el logo y los enlaces */
   }
-=======
->>>>>>> parent of 53f47c3 (git1)
+}
+
+.content {
+  margin-left: 100px; /* Aseguramos que el contenido se mantenga sin superponerse */
 }
